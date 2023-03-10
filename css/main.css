@@ -1,0 +1,300 @@
+@import url('fonts.css');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --fixel: 'Fixel', sans-serif;
+    --gold: #ffd700;
+    --dark: #333;
+    --light: #aaa;
+    --gray: #777;
+    --blue: #0080ff;
+    --yellow: #ffff00;
+    --light-green: #b4e8b0;
+    --stars: #d9b307;
+}
+html, body {width: 100%}
+body {
+    font-family: var(--fixel);
+    font-size: 18px;
+    font-weight: 400;
+    height: 100vh;
+}
+a {color: var(--dark)}
+.tryzub {
+    position: fixed;
+    top: calc(var(--index) * 1.5);
+    left: calc(var(--index) * 2);
+    font-size: 31px;
+    font-weight: 700;
+    color: var(--gold);
+    text-shadow: 3px 3px 3px var(--dark);
+    z-index: 99;
+}
+.alexproger {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark);
+    text-shadow: 3px 3px 3px var(--light);
+}
+.slow {transition: all 700ms linear}
+.fast {transition: all 100ms linear}
+.container {
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    padding: 5vh 5%;
+}
+.report {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.table {
+    width: calc(33.333% - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table > :not(:first-child) {margin-top: 10px}
+.name {
+    font-size: 22px;
+    font-weight: 600;
+}
+.its-table {
+    width: 100%;
+    background-color: var(--light-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    width: calc(100% - 10px);
+    border: 1.5px solid var(--dark);
+    border-bottom: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contry {
+    width: 60%;
+    text-align: center;
+    font-weight: 600;
+}
+.fa-solid {color: var(--stars)}
+.stars {font-size: 16px}
+.main {
+    width: calc(100% + 3px);
+    display: flex;
+    align-items: flex-start;
+}
+.left, .center, .right {
+    width: calc(20% - 20px);
+    border: 1.5px solid var(--dark);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+.center {
+    width: calc(45% - 20px);
+    border-left: 0;
+    border-right: 0;
+}
+.right {width: calc(35% - 20px)}
+.next, .start, .restart {
+    display: none;
+    position: absolute;
+    top: calc(var(--index) * 2);
+    left: calc(var(--index) * 4);
+    min-width: calc(var(--index) * 4);
+    text-align: center;
+    padding: 4px 0;
+    border: 0.5px solid var(--dark);
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px 0 var(--dark);
+    cursor: pointer;
+    z-index: 98;
+}
+.restart {
+    z-index: 99;
+    padding: 0 8px;
+}
+.mess {
+    position: absolute;
+    top: calc(var(--index) * 2);
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--dark);
+    font-weight: 500;
+    text-shadow: 3px 3px 3px var(--light);
+    z-index: 98;
+}
+.calc {
+    position: absolute;
+    top: calc(var(--index) * 2);
+    right: calc(var(--index) * 2);
+    color: var(--dark);
+    font-weight: 500;
+    text-shadow: 3px 3px 3px var(--light);
+    z-index: 98;
+}
+.fa-calculator {
+    font-size: calc(var(--index) * 1.1);
+    color: var(--light);
+    text-shadow: 3px 3px 3px var(--dark);
+}
+.map {
+    position: fixed;
+    z-index: -1;
+}
+.usa {
+    position: absolute;
+    top: calc(var(--index) * 14);
+    left: calc(var(--index) * 15);
+}
+.mexica {
+    position: absolute;
+    top: calc(var(--index) * 24);
+    left: calc(var(--index) * 20);
+}
+.europe {
+    position: absolute;
+    top: calc(var(--index) * 13);
+    left: calc(var(--index) * 34.5);
+}
+.asia {
+    position: absolute;
+    top: calc(var(--index) * 16.5);
+    left: calc(var(--index) * 42);
+}
+.australia {
+    position: absolute;
+    top: calc(var(--index) * 25.5);
+    left: calc(var(--index) * 48.5);
+}
+.block-people {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.block-people > :not(:first-child) {margin-left: 10px}
+.people-sm {height: calc(var(--index) * 1.5)}
+.people-md {height: calc(var(--index) * 2.2)}
+.people-lg {height: calc(var(--index) * 2.9)}
+.block-gadget {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.block-gadget__laptop, .block-gadget__smartphone, .block-gadget__telephone {
+    position: absolute;
+    top: calc(var(--index) * 3);
+    left: calc(var(--index) * 1.5);
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.usa > .block-server.first, .usa > .block-server.second, .europe > .block-server, .asia > .block-server {
+    position: absolute;
+    top: calc(var(--index) * 1);
+    left: calc(var(--index) * 4.3);
+    width: calc(var(--index) * 2);
+    height: calc(var(--index) * 2);
+}
+.usa > .block-server.second {
+    top: calc(var(--index) * 1.2);
+    left: calc(var(--index) * -4.2);
+}
+.europe > .block-server {
+    left: calc(var(--index) * -4);
+}
+.asia > .block-server {
+    top: calc(var(--index) * 6.5);
+    left: calc(var(--index) * 4);
+}
+.laptop, .smartphone, .telephone, .position, .server {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.top {
+    position: relative;
+    top: -24px;
+    font-size: 10px;
+    white-space: nowrap;
+}
+.server, .position {opacity: 0}
+.position {z-index: 3}
+.laptop-mask, .smartphone-mask, .telephone-mask {
+    position: absolute;
+    top: 0;
+    left: calc(var(--index) * 0.2);
+    width: 0;
+    height: 100%;
+    filter: hue-rotate(180deg) opacity(0.5);
+}
+.smartphone-mask {left: calc(var(--index) * 0.5)}
+.telephone-mask {left: calc(var(--index) * 0.67)}
+.eunas, .eunam, .eunal, .eusas, .eusam, .eusal, .eues, .euem, .euel, .euas, .euam, .eual, .euos, .euom, .euol,
+.wunas, .wunam, .wunal, .wusas, .wusam, .wusal, .wues, .wuem, .wuel, .wuas, .wuam, .wual, .wuos, .wuom, .wuol, 
+.ges, .gem, .gel, .gas, .gam, .gal, .gos, .gom, .gol, .gnas, .gnam, .gnal, .gsas, .gsam, .gsal, 
+.sos, .som, .sol, .sas, .sam, .sal, .ses, .sem, .sel, .snas, .snam, .snal, .ssas, .ssam, .ssal
+{
+    position: absolute;
+    transition: all 500ms ease;
+    opacity: 0;
+}
+
+@keyframes show {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.4);
+    }
+}
+@keyframes start {
+    10% {transform: translateX(5px)}
+    20% {transform: translateX(-5px)}
+    30% {transform: translateX(5px)}
+    40% {transform: translateX(-5px)}
+    50% {transform: translateX(5px)}
+    60% {transform: translateX(-5px)}
+    70% {transform: translateX(5px)}
+    80% {transform: translateX(-5px)}
+    90% {transform: translateX(5px)}
+    100% {transform: translateX(0)}
+}
+
+.soundbutton {
+	position: fixed;
+	bottom: calc(var(--index) * 2);
+	right: calc(var(--index) * 2);
+	cursor: pointer;
+	font-size: calc(var(--index) * 2);
+	transition: .25s ease;
+}
+.soundbutton.paused {
+	opacity: .25;
+}
