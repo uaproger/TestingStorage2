@@ -21,7 +21,7 @@
 html, body {width: 100%}
 body {
     font-family: var(--fixel);
-    font-size: 18px;
+    font-size: calc(var(--index) * 0.8);
     font-weight: 400;
     height: 100vh;
 }
@@ -30,14 +30,14 @@ a {color: var(--dark)}
     position: fixed;
     top: calc(var(--index) * 1.5);
     left: calc(var(--index) * 2);
-    font-size: 31px;
+    font-size: calc(var(--index) * 1.5);
     font-weight: 700;
     color: var(--gold);
     text-shadow: 3px 3px 3px var(--dark);
     z-index: 99;
 }
 .alexproger {
-    font-size: 18px;
+    font-size: calc(var(--index) * 0.8);
     font-weight: 500;
     color: var(--dark);
     text-shadow: 3px 3px 3px var(--light);
@@ -94,6 +94,7 @@ a {color: var(--dark)}
 .contry {
     width: 60%;
     text-align: center;
+    font-size: calc(var(--index) * 0.7);
     font-weight: 600;
 }
 .fa-solid {color: var(--stars)}
@@ -108,7 +109,7 @@ a {color: var(--dark)}
     border: 1.5px solid var(--dark);
     padding: 5px 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: calc(var(--index) * 0.55);
     font-weight: 300;
 }
 .center {
@@ -123,6 +124,7 @@ a {color: var(--dark)}
     top: calc(var(--index) * 2);
     left: calc(var(--index) * 4);
     min-width: calc(var(--index) * 4);
+    font-size: calc(var(--index) * 0.8);
     text-align: center;
     padding: 4px 0;
     border: 0.5px solid var(--dark);
@@ -162,18 +164,22 @@ a {color: var(--dark)}
     text-shadow: 3px 3px 3px var(--dark);
 }
 .map {
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 .usa {
     position: absolute;
     top: calc(var(--index) * 14);
-    left: calc(var(--index) * 15);
+    left: calc(var(--index) * 13);
 }
 .mexica {
     position: absolute;
-    top: calc(var(--index) * 24);
-    left: calc(var(--index) * 20);
+    top: calc(var(--index) * 25);
+    left: calc(var(--index) * 19);
 }
 .europe {
     position: absolute;
@@ -183,12 +189,12 @@ a {color: var(--dark)}
 .asia {
     position: absolute;
     top: calc(var(--index) * 16.5);
-    left: calc(var(--index) * 42);
+    left: calc(var(--index) * 44);
 }
 .australia {
     position: absolute;
-    top: calc(var(--index) * 25.5);
-    left: calc(var(--index) * 48.5);
+    top: calc(var(--index) * 27);
+    left: calc(var(--index) * 51);
 }
 .block-people {
     display: flex;
@@ -215,20 +221,20 @@ a {color: var(--dark)}
 .usa > .block-server.first, .usa > .block-server.second, .europe > .block-server, .asia > .block-server {
     position: absolute;
     top: calc(var(--index) * 1);
-    left: calc(var(--index) * 4.3);
+    left: calc(var(--index) * 5.3);
     width: calc(var(--index) * 2);
     height: calc(var(--index) * 2);
 }
 .usa > .block-server.second {
     top: calc(var(--index) * 1.2);
-    left: calc(var(--index) * -4.2);
+    left: calc(var(--index) * -4.5);
 }
 .europe > .block-server {
-    left: calc(var(--index) * -4);
+    left: calc(var(--index) * -3.8);
 }
 .asia > .block-server {
-    top: calc(var(--index) * 6.5);
-    left: calc(var(--index) * 4);
+    top: calc(var(--index) * 7.9);
+    left: calc(var(--index) * 4.2);
 }
 .laptop, .smartphone, .telephone, .position, .server {
     position: absolute;
@@ -262,10 +268,16 @@ a {color: var(--dark)}
 .sos, .som, .sol, .sas, .sam, .sal, .ses, .sem, .sel, .snas, .snam, .snal, .ssas, .ssam, .ssal
 {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     transition: all 500ms ease;
     opacity: 0;
 }
-
+@media (max-width: 900px) {
+    .container {display: none}
+}
 @keyframes show {
     0% {
         transform: scale(0);

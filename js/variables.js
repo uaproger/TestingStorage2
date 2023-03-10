@@ -7,58 +7,58 @@ const block_wh = 'calc(var(--index) * 2'
 const continent = {
     'usa' : {
         'laptop' : {
-            'top' : 'calc(var(--index) * 0.5)',
-            'left' : 'calc(var(--index) * 1.7)'
+            'top' : 'calc(var(--index) * 0.2)',
+            'left' : 'calc(var(--index) * 2.5)'
         },
         'smartphone' : {
             'top' : 'calc(var(--index) * 2.2)',
             'left' : 'calc(var(--index) * -0.2)'
         },
         'telephone' : {
-            'top' : 'calc(var(--index) * 0.8)',
+            'top' : 'calc(var(--index) * 0.5)',
             'left' : 'calc(var(--index) * -2.7)'
         }
     },
     'mexica' : {
         'laptop' : {
             'top' : 'calc(var(--index) * 0.5)',
-            'left' : 'calc(var(--index) * 1.8)'
+            'left' : 'calc(var(--index) * 2.3)'
         },
         'smartphone' : {
-            'top' : 'calc(var(--index) * 3.2)',
-            'left' : 'calc(var(--index) * 1)'
+            'top' : 'calc(var(--index) * 3.5)',
+            'left' : 'calc(var(--index) * 0.8)'
         },
         'telephone' : {
-            'top' : 'calc(var(--index) * -0.8)',
-            'left' : 'calc(var(--index) * -0.8)'
+            'top' : 'calc(var(--index) * -1)',
+            'left' : 'calc(var(--index) * -1.1)'
         }
     },
     'europe' : {
         'laptop' : {
-            'top' : 'calc(var(--index) * 1.11)',
-            'left' : 'calc(var(--index) * -1.8)'
+            'top' : 'calc(var(--index) * 1)',
+            'left' : 'calc(var(--index) * -1.5)'
         },
         'smartphone' : {
-            'top' : 'calc(var(--index) * 3.2',
-            'left' : 'calc(var(--index) * -5.7)'
+            'top' : 'calc(var(--index) * 3',
+            'left' : 'calc(var(--index) * -5.8)'
         },
         'telephone' : {
-            'top' : 'calc(var(--index) * 0.1)',
-            'left' : 'calc(var(--index) * 1.7)'
+            'top' : 'calc(var(--index) * -0.5)',
+            'left' : 'calc(var(--index) * 2.3)'
         }
     },
     'asia' : {
         'laptop' : {
             'top' : 'calc(var(--index) * 1.5)',
-            'left' : 'calc(var(--index) * 4)'
+            'left' : 'calc(var(--index) * 4.3)'
         },
         'smartphone' : {
             'top' : 'calc(var(--index) * 2.8)',
-            'left' : 'calc(var(--index) * -0.8)'
+            'left' : 'calc(var(--index) * -1.3)'
         },
         'telephone' : {
-            'top' : 'calc(var(--index) * -1.3)',
-            'left' : 'calc(var(--index) * 6.6)'
+            'top' : 'calc(var(--index) * -1.8)',
+            'left' : 'calc(var(--index) * 6.8)'
         }
     },
     'australia' : {
@@ -68,11 +68,11 @@ const continent = {
         },
         'smartphone' : {
             'top' : 'calc(var(--index) * 1.1)',
-            'left' : 'calc(var(--index) * 1.2)'
+            'left' : 'calc(var(--index) * 1)'
         },
         'telephone' : {
             'top' : 'calc(var(--index) * 1)',
-            'left' : 'calc(var(--index) * -1.2)'
+            'left' : 'calc(var(--index) * -1.5)'
         }
     }
 }
