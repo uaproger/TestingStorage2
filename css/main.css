@@ -249,6 +249,11 @@ a {color: var(--dark)}
     top: -24px;
     font-size: 10px;
     white-space: nowrap;
+    padding: 2px 5px;
+    border: 0.5px solid var(--dark);
+    border-radius: 8px;
+    background-color: var(--light-green);
+    /* background-image: linear-gradient(to bottom, var(--blue) 50%, var(--yellow) 50%); */
 }
 .server, .position {opacity: 0}
 .position {z-index: 3}
