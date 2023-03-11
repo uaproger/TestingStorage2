@@ -12,11 +12,11 @@ function resetDownload() {
     for (let i = 0; i < 5; i++) {
         for (let j = 0; j < 3; j++) {
             if (gadget[j] == 'laptop') {
-                leftt = 'calc(var(--index) * 0.2)'
+                leftt = 'calc(var(--index) * 0.1)'
             } else if (gadget[j] == 'smartphone') {
-                leftt = 'calc(var(--index) * 0.5)'
+                leftt = 'calc(var(--index) * 0.3)'
             } else if (gadget[j] == 'telephone') {
-                leftt = 'calc(var(--index) * 0.67)'
+                leftt = 'calc(var(--index) * 0.3)'
             }
             $('.' + countries[i] + ' .' + gadget[j] + '-mask').css({"width" : "0", "left" : leftt, "transition" : "all 100ms linear"})
         }

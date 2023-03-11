@@ -46,9 +46,8 @@ a {color: var(--dark)}
 .fast {transition: all 100ms linear}
 .container {
     position: relative;
-    width: 90%;
-    height: 90vh;
-    padding: 5vh 5%;
+    width: 100%;
+    height: 100%;
 }
 .report {
     position: fixed;
@@ -165,36 +164,45 @@ a {color: var(--dark)}
 }
 .map {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(var(--index) * 50);
+    height: calc(var(--index) * 28.125);
     z-index: -1;
+}
+.contries {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(var(--index) * 50);
+    height: calc(var(--index) * 28.125);
 }
 .usa {
     position: absolute;
-    top: calc(var(--index) * 14);
-    left: calc(var(--index) * 13);
+    top: calc(var(--index) * 11);
+    left: calc(var(--index) * 9.5);
 }
 .mexica {
     position: absolute;
-    top: calc(var(--index) * 25);
-    left: calc(var(--index) * 19);
+    top: calc(var(--index) * 19);
+    left: calc(var(--index) * 14.5);
 }
 .europe {
     position: absolute;
-    top: calc(var(--index) * 13);
-    left: calc(var(--index) * 34.5);
+    top: calc(var(--index) * 9.5);
+    left: calc(var(--index) * 27.1);
 }
 .asia {
     position: absolute;
-    top: calc(var(--index) * 16.5);
-    left: calc(var(--index) * 44);
+    top: calc(var(--index) * 12);
+    left: calc(var(--index) * 34);
 }
 .australia {
     position: absolute;
-    top: calc(var(--index) * 27);
-    left: calc(var(--index) * 51);
+    top: calc(var(--index) * 20.5);
+    left: calc(var(--index) * 40);
 }
 .block-people {
     display: flex;
@@ -202,9 +210,9 @@ a {color: var(--dark)}
     position: relative;
 }
 .block-people > :not(:first-child) {margin-left: 10px}
-.people-sm {height: calc(var(--index) * 1.5)}
-.people-md {height: calc(var(--index) * 2.2)}
-.people-lg {height: calc(var(--index) * 2.9)}
+.people-sm {height: calc(var(--index) * 1.25)}
+.people-md {height: calc(var(--index) * 2)}
+.people-lg {height: calc(var(--index) * 2.75)}
 .block-gadget {
     position: absolute;
     top: 0;
@@ -220,21 +228,22 @@ a {color: var(--dark)}
 }
 .usa > .block-server.first, .usa > .block-server.second, .europe > .block-server, .asia > .block-server {
     position: absolute;
-    top: calc(var(--index) * 1);
-    left: calc(var(--index) * 5.3);
+    top: calc(var(--index) * 0.3);
+    left: calc(var(--index) * 4.5);
     width: calc(var(--index) * 2);
     height: calc(var(--index) * 2);
 }
 .usa > .block-server.second {
-    top: calc(var(--index) * 1.2);
-    left: calc(var(--index) * -4.5);
+    top: calc(var(--index) * 1);
+    left: calc(var(--index) * -2.8);
 }
 .europe > .block-server {
-    left: calc(var(--index) * -3.8);
+    top: calc(var(--index) * 1);
+    left: calc(var(--index) * -3.1);
 }
 .asia > .block-server {
-    top: calc(var(--index) * 7.9);
-    left: calc(var(--index) * 4.2);
+    top: calc(var(--index) * 6.6);
+    left: calc(var(--index) * 3.5);
 }
 .laptop, .smartphone, .telephone, .position, .server {
     position: absolute;
@@ -260,27 +269,28 @@ a {color: var(--dark)}
 .laptop-mask, .smartphone-mask, .telephone-mask {
     position: absolute;
     top: 0;
-    left: calc(var(--index) * 0.2);
+    left: calc(var(--index) * 0.15);
     width: 0;
     height: 100%;
     filter: hue-rotate(180deg) opacity(0.5);
 }
-.smartphone-mask {left: calc(var(--index) * 0.5)}
-.telephone-mask {left: calc(var(--index) * 0.67)}
+.smartphone-mask {left: calc(var(--index) * 0.35)}
+.telephone-mask {left: calc(var(--index) * 0.35)}
 .eunas, .eunam, .eunal, .eusas, .eusam, .eusal, .eues, .euem, .euel, .euas, .euam, .eual, .euos, .euom, .euol,
 .wunas, .wunam, .wunal, .wusas, .wusam, .wusal, .wues, .wuem, .wuel, .wuas, .wuam, .wual, .wuos, .wuom, .wuol, 
 .ges, .gem, .gel, .gas, .gam, .gal, .gos, .gom, .gol, .gnas, .gnam, .gnal, .gsas, .gsam, .gsal, 
 .sos, .som, .sol, .sas, .sam, .sal, .ses, .sem, .sel, .snas, .snam, .snal, .ssas, .ssam, .ssal
 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(var(--index) * 50);
+    height: calc(var(--index) * 28.125);
     transition: all 500ms ease;
     opacity: 0;
 }
-@media (max-width: 900px) {
+@media (max-width: 479px) {
     .container {display: none}
 }
 @keyframes show {

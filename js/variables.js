@@ -1,78 +1,78 @@
 const sizes = ['sm', 'md', 'lg']
 const countries = ["usa", "mexica", "europe", "asia", "australia"]
 const gadget = ['laptop', 'smartphone', 'telephone']
-const block_wh = 'calc(var(--index) * 2'
+const block_wh = 'calc(var(--index) * 1.6'
 
 // позиції пристроїв на мапі
 const continent = {
     'usa' : {
         'laptop' : {
             'top' : 'calc(var(--index) * 0.2)',
-            'left' : 'calc(var(--index) * 2.5)'
+            'left' : 'calc(var(--index) * 2.7)'
         },
         'smartphone' : {
-            'top' : 'calc(var(--index) * 2.2)',
-            'left' : 'calc(var(--index) * -0.2)'
+            'top' : 'calc(var(--index) * 1.6)',
+            'left' : 'calc(var(--index) * 0.5)'
         },
         'telephone' : {
             'top' : 'calc(var(--index) * 0.5)',
-            'left' : 'calc(var(--index) * -2.7)'
+            'left' : 'calc(var(--index) * -1.5)'
         }
     },
     'mexica' : {
         'laptop' : {
             'top' : 'calc(var(--index) * 0.5)',
-            'left' : 'calc(var(--index) * 2.3)'
+            'left' : 'calc(var(--index) * 2.1)'
         },
         'smartphone' : {
-            'top' : 'calc(var(--index) * 3.5)',
-            'left' : 'calc(var(--index) * 0.8)'
+            'top' : 'calc(var(--index) * 3.1)',
+            'left' : 'calc(var(--index) * 1.1)'
         },
         'telephone' : {
-            'top' : 'calc(var(--index) * -1)',
-            'left' : 'calc(var(--index) * -1.1)'
+            'top' : 'calc(var(--index) * -0.3)',
+            'left' : 'calc(var(--index) * -0.5)'
         }
     },
     'europe' : {
         'laptop' : {
-            'top' : 'calc(var(--index) * 1)',
-            'left' : 'calc(var(--index) * -1.5)'
+            'top' : 'calc(var(--index) * 1.3)',
+            'left' : 'calc(var(--index) * -1.1)'
         },
         'smartphone' : {
             'top' : 'calc(var(--index) * 3',
-            'left' : 'calc(var(--index) * -5.8)'
+            'left' : 'calc(var(--index) * -4.8)'
         },
         'telephone' : {
-            'top' : 'calc(var(--index) * -0.5)',
-            'left' : 'calc(var(--index) * 2.3)'
+            'top' : 'calc(var(--index) * 0.2)',
+            'left' : 'calc(var(--index) * 1.8)'
         }
     },
     'asia' : {
         'laptop' : {
-            'top' : 'calc(var(--index) * 1.5)',
-            'left' : 'calc(var(--index) * 4.3)'
+            'top' : 'calc(var(--index) * 1.8)',
+            'left' : 'calc(var(--index) * 3.9)'
         },
         'smartphone' : {
             'top' : 'calc(var(--index) * 2.8)',
-            'left' : 'calc(var(--index) * -1.3)'
+            'left' : 'calc(var(--index) * -0.6)'
         },
         'telephone' : {
-            'top' : 'calc(var(--index) * -1.8)',
-            'left' : 'calc(var(--index) * 6.8)'
+            'top' : 'calc(var(--index) * -0.8)',
+            'left' : 'calc(var(--index) * 6)'
         }
     },
     'australia' : {
         'laptop' : {
-            'top' : 'calc(var(--index) * 1)',
-            'left' : 'calc(var(--index) * 3.7)'
+            'top' : 'calc(var(--index) * 1.3)',
+            'left' : 'calc(var(--index) * 2.7)'
         },
         'smartphone' : {
-            'top' : 'calc(var(--index) * 1.1)',
-            'left' : 'calc(var(--index) * 1)'
+            'top' : 'calc(var(--index) * 1.5)',
+            'left' : 'calc(var(--index) * -1.1)'
         },
         'telephone' : {
-            'top' : 'calc(var(--index) * 1)',
-            'left' : 'calc(var(--index) * -1.5)'
+            'top' : 'calc(var(--index) * 1.1)',
+            'left' : 'calc(var(--index) * 0.9)'
         }
     }
 }
