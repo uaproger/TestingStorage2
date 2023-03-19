@@ -17,6 +17,7 @@
     --yellow: #ffff00;
     --light-green: #b4e8b0;
     --stars: #d9b307;
+    --display-blue: #4ca8f9;
 }
 html, body {width: 100%}
 body {
@@ -224,7 +225,7 @@ a {color: var(--dark)}
     left: calc(var(--index) * 1.5);
     width: 0;
     height: 0;
-    opacity: 0;
+    opacity: 1;
 }
 .usa > .block-server.first, .usa > .block-server.second, .europe > .block-server, .asia > .block-server {
     position: absolute;
@@ -262,20 +263,44 @@ a {color: var(--dark)}
     border: 0.5px solid var(--dark);
     border-radius: 8px;
     background-color: var(--light-green);
-    /* background-image: linear-gradient(to bottom, var(--blue) 50%, var(--yellow) 50%); */
 }
 .server, .position {opacity: 0}
 .position {z-index: 3}
 .laptop-mask, .smartphone-mask, .telephone-mask {
     position: absolute;
-    top: 0;
-    left: calc(var(--index) * 0.15);
-    width: 0;
-    height: 100%;
-    filter: hue-rotate(180deg) opacity(0.5);
+    filter: opacity(0.7);
+    overflow: hidden;
 }
-.smartphone-mask {left: calc(var(--index) * 0.35)}
-.telephone-mask {left: calc(var(--index) * 0.35)}
+.laptop-mask {
+    top: calc(var(--index) * 0.35);
+    left: calc(var(--index) * 0.17);
+    width: calc(var(--index) * 1.26);
+    height: calc(var(--index) * 0.765);
+}
+.smartphone-mask {
+    top: calc(var(--index) * 0.26);
+    left: calc(var(--index) * 0.4);
+    width: calc(var(--index) * 0.8);
+    height: calc(var(--index) * 1.1);
+}
+.telephone-mask {
+    top: calc(var(--index) * 0.455);
+    left: calc(var(--index) * 0.56);
+    width: calc(var(--index) * 0.54);
+    height: calc(var(--index) * 0.32);
+    border-radius: 2px;
+}
+.color {
+    width: 200%;
+    height: 100%;
+    transform: translateX(-51%);
+}
+.blue {
+    width: 50%;
+    height: 100%;
+    background-color: var(--display-blue);
+}
+.gray {background-color: inherit}
 .eunas, .eunam, .eunal, .eusas, .eusam, .eusal, .eues, .euem, .euel, .euas, .euam, .eual, .euos, .euom, .euol,
 .wunas, .wunam, .wunal, .wusas, .wusam, .wusal, .wues, .wuem, .wuel, .wuas, .wuam, .wual, .wuos, .wuom, .wuol, 
 .ges, .gem, .gel, .gas, .gam, .gal, .gos, .gom, .gol, .gnas, .gnam, .gnal, .gsas, .gsam, .gsal, 

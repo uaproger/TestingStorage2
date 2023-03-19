@@ -12,13 +12,13 @@ function resetDownload() {
     for (let i = 0; i < 5; i++) {
         for (let j = 0; j < 3; j++) {
             if (gadget[j] == 'laptop') {
-                leftt = 'calc(var(--index) * 0.1)'
+                leftt = 'calc(var(--index) * 0.15)'
             } else if (gadget[j] == 'smartphone') {
-                leftt = 'calc(var(--index) * 0.3)'
+                leftt = 'calc(var(--index) * 0.35)'
             } else if (gadget[j] == 'telephone') {
-                leftt = 'calc(var(--index) * 0.3)'
+                leftt = 'calc(var(--index) * 0.35)'
             }
-            $('.' + countries[i] + ' .' + gadget[j] + '-mask').css({"width" : "0", "left" : leftt, "transition" : "all 100ms linear"})
+            $('.' + countries[i] + ' .' + gadget[j] + '-mask > .color').css({"transform" : "translateX(-51%)", "transition" : "all 100ms linear"})
         }
     }
 }
@@ -165,7 +165,7 @@ function setSpeed(cont, gadg, spee, numero) {
     }
 
     // демонструємо завантаження на дисплеях пристроїв
-    $('.' + cont + ' .' + gadg + '-mask').css({"width" : "100%", "left" : "0", "transition" : "all " + spee + "ms linear"})
+    $('.' + cont + ' .' + gadg + '-mask > .color').css({"transform" : "translateX(0)", "transition" : "all " + spee + "ms linear"})
     
     // встановлюемо тривалість затримки між підключеннями серверів
     if (spee > speed) {
